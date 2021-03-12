@@ -32,7 +32,7 @@ body{font-family: 'Rubik', sans-serif;}
 .article1 .slide1{
     height: 80vh;
     background: url(../image/EKyALOYXYAEIipw.jpg) no-repeat center;
-    background-position: 0 57%;
+    background-position: 0 60%;
     background-size: cover;
 }
 .article1 .slide2{
@@ -49,7 +49,7 @@ body{font-family: 'Rubik', sans-serif;}
 }
 .article1 .slick-dots{
     position:absolute;
-    bottom: 2%; left: 50%;
+    bottom: 3%; left: 50%;
     transform: translateX(-50%);
 }
 .article1 .slick-dots li{
