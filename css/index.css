@@ -115,8 +115,46 @@ body{font-family: 'Rubik', sans-serif;}
 .article3{padding:100px 0;}
 .article3 ul li{width:50%; height: 315px; float:left;}
 
+/* article3 사진 */
+.article3 ul li:nth-child(2) h4{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 30px; margin-bottom:2%; 
+    color:#e6427a; font-weight: 400; 
+    }
+.article3 ul li:nth-child(2) p{margin-bottom:2%; color:#555;}
+.article3 ul li:nth-child(2) input{height:25px; padding-left:10px;}
+.article3 ul li:nth-child(2) button{
+    height:25px; padding: 0 10px;
+    background: #e6427a; color:#fff;
+    border:none; border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
 .article3 ul li:nth-child(2){
+    padding: 15% 8% 5% 3%;
+    position:relative;
+}
+.article3 ul li:nth-child(2)::after{
+    content:""; position:absolute; left:0; top:0; right:0; bottom:0;
     background: url(../image/EpmGw8LXYAMWqUf.jpg) no-repeat;
     background-size: cover;
     background-position: 0 30%;
+    z-index: -1;
+    opacity: 0.5;
 }
+
+/* footer */
+#footer > div:nth-child(1){background: #e6427a; color:#fff; font-size: 14px;}
+#footer > div:nth-child(1) li{ float:left; padding: 1% 1.73%;}
+
+#footer > div:nth-child(2){width:100%; background: #333; color:#aaa; padding:2% 0;}
+
+#footer > div:nth-child(2) li{
+    width:33.333%; float:left; text-align: center; padding: 0 3%;
+
+}
+#footer > div:nth-child(2) li i{font-size: 20px;}
+#footer > div:nth-child(2) li h4{margin:5% 0 3%;}
+#footer > div:nth-child(2) li p { font-weight: lighter; line-height: 1.4; font-size:14px}
+
