@@ -25,7 +25,29 @@ body{font-family: 'Rubik', sans-serif;}
 
 /* 네비게이션 */
 #header .nav .depth1{width: 100%; text-align: center;}
-#header .nav .depth1 li{ margin: 10px 1.9% 20px; display: inline-block;} 
+#header .nav .depth1 > li:hover{background: #e6427a;}
+#header .nav .depth1 > li{display:inline-block;  position: relative;}
+#header .nav .depth1 > li > a{ 
+    margin: 13px 23px; display:inline-block;
+    text-align: center;
+} 
+#header .nav .depth1 > li.on > a{
+    color:#fff;
+}
+#header .nav .depth2 {
+    position:absolute;  
+    background: #fff;
+    z-index: 999;
+    display:none;
+}
+#header .nav .depth2 li:hover{
+    background: #e6427a;
+    color: #fff;
+}
+#header .nav .depth2 li{
+    width: 250px;
+    padding: 13px 0;
+}
 
 /* article1 슬라이드 */
 .article1 .slide_group1{position:relative;}

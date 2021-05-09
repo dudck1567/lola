@@ -25,3 +25,24 @@ $(".article2 .cf li").on('click', function(){
     $(this).parent().next().children().eq(num)
     .addClass('active').siblings().removeClass('active')
 })
+
+// 네비 뎁스2
+
+$('.nav .depth1 > li').hover(
+    function(){
+        if(!$(this).hasClass('on')){
+            $(this).addClass('on')
+            $(this).siblings().removeClass('on')
+            $(this).find('.depth2').stop().slideDown(300)
+        }
+    },
+    function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on')
+            $(this).siblings().removeClass('on')
+            $(this).find('.depth2').stop().slideUp(300)
+        }
+    }
+  
+    
+)
